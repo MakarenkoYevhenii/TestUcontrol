@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" style="margin-right: 150px"
+        ><img src="./share/img/logo.png"
+      /></a>
+      <a href="/" style="margin-right: 20px"
+        ><img src="./share/img/Search-line.png"
+      /></a>
+      <a href="/"><img src="./share/img/Tariff_Normal.png" /></a>
+      <button id="myBtn" class="buttonNotification">
+        <svg class="notificationIcon">
+          <use href="./share/svg/headerdefs.svg#icon-first"></use>
+        </svg>
+      </button>
+      <button class="buttonNotification">
+        <svg class="secondNotificationIcon">
+          <use href="./share/svg/headerdefs.svg#icon-second"></use>
+        </svg>
+      </button>
+    </header>
+    <div class="bodyWrapper">
+      <ul>
+        <li class="navItem">Дашборд</li>
+        <li class="navItem">Пошук по досьє</li>
+        <li class="navItem">Моніторинг</li>
+        <li class="navItem">Мої контрагенти</li>
+        <li class="navItem">Пошук зв'язків</li>
+        <li class="navItem">Ринки</li>
+        <li class="navItem">Список реєстрів</li>
+        <li class="navItem">Інформація</li>
+      </ul>
+      <ul class="mainContent">
+        <li><img src="./share/img/mainPage/Monitoring.png" alt="" /></li>
+        <li><img src="./share/img/mainPage/Contractors.png" alt="" /></li>
+        <li><img src="./share/img/mainPage/Connection.png" alt="" /></li>
+        <li><img src="./share/img/mainPage/Markets.png" alt="" /></li>
+
+        <li><img src="./share/img/mainPage/Registers.png" alt="" /></li>
+        <li>
+          <img src="./share/img/mainPage/News.png" alt="" />
+          <img src="./share/img/mainPage/Articles.png" alt="" />
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <div class="footerContainer">
+        <div class="contactContainer">
+          <p class="contactHeader">Дзвінок безкоштовний</p>
+          <a href="tel:0800309077" class="contactNumber">0 800 309 077</a>
+          <a href="mailto:mail@youcontrol.com.ua" class="contactEmail"
+            >mail@youcontrol.com.ua</a
+          >
+          <div>
+            <p class="contactClient">Вирішили купувати?</p>
+            <button class="contactClientButton">замовити дзвінок</button>
+          </div>
+        </div>
+        <div class="informationContainer">
+          <p class="informationHeader">Для користувачів</p>
+          <ul>
+            <li><a class="informationLink" href="">Можливості</a></li>
+            <li><a class="informationLink" href="">Кейси</a></li>
+            <li><a class="informationLink" href="">Тарифи</a></li>
+          </ul>
+        </div>
+        <div class="ourProjectsContainer">
+          <p class="ourProjectsHeader">Наші проекти</p>
+          <div class="projectUScoreWrapper">
+            <svg class="svgProject">
+              <use href="./share/svg/symbol-defs.svg#Shape"></use>
+            </svg>
+            <div>
+              <p class="ourProjectName">YouScore</p>
+              <p class="outrProjectDescription">Доступ по API</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="projectUScoreWrapper">
+              <svg class="svgProject">
+                <use href="./share/svg/symbol-defs.svg#extensions"></use>
+              </svg>
+              <div>
+                <p class="ourProjectName">Додаток</p>
+                <p class="outrProjectDescription">Chrome, Mozilla</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="slogan">
+            ©YouControl – повне досьє на кожну компанію України
+          </p>
+          <ul class="socialMediaList">
+            <li class="socialMediaItem">
+              <svg class="svgContact">
+                <use href="./share/svg/symbol-defs.svg#facebook"></use>
+              </svg>
+            </li>
+            <li class="socialMediaItem">
+              <svg class="svgContact">
+                <use href="./share/svg/symbol-defs.svg#youtube"></use>
+              </svg>
+            </li>
+            <li class="socialMediaItem">
+              <svg class="svgContact">
+                <use href="./share/svg/symbol-defs.svg#linkedin"></use>
+              </svg>
+            </li>
+            <li class="socialMediaItem">
+              <svg class="svgContact">
+                <use href="./share/svg/symbol-defs.svg#telegram"></use>
+              </svg>
+            </li>
+          </ul>
+          <div class="paymentMethodWrapper">
+            <p class="paymentMathodHeader">Сплачуйте онлайн:</p>
+            <ul class="paymentMethodList">
+              <li>
+                <svg class="svgPayment">
+                  <use href="./share/svg/symbol-defs.svg#visa"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="svgPayment">
+                  <use href="./share/svg/symbol-defs.svg#mastercard"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- modal Menu -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p>Сповіщення від YouControl</p>
+        <ul>
+          <li id="notification">
+            <div class="itemTime">
+              <button class="notificationRefresh">оновлення</button>
+              <p class="notificationDate">Сьогодні 29.05.2019</p>
+            </div>
+            <p class="notificationHeader">Нові функції моніторинга</p>
+            <p class="notificationMessage">
+              Uniquely fashion B2B content for one-to-one web-readiness.
+              Continually embrace.
+            </p>
+          </li>
+          <li id="notification">
+            <div class="itemTime">
+              <button class="notificationRefresh">оновлення</button>
+              <p class="notificationDate">Сьогодні 29.05.2019</p>
+            </div>
+            <p class="notificationHeader">Нові функції моніторинга</p>
+            <p class="notificationMessage">
+              Uniquely fashion B2B content for one-to-one web-readiness.
+              Continually embrace.
+            </p>
+          </li>
+          <li id="notification">
+            <div class="itemTime">
+              <button class="notificationRefresh">оновлення</button>
+              <p class="notificationDate">Сьогодні 29.05.2019</p>
+            </div>
+            <p class="notificationHeader">Нові функції моніторинга</p>
+            <p class="notificationMessage">
+              Uniquely fashion B2B content for one-to-one web-readiness.
+              Continually embrace.
+            </p>
+          </li>
+          <li id="notification">
+            <div class="itemTime">
+              <button class="notificationRefresh">оновлення</button>
+              <p class="notificationDate">Сьогодні 29.05.2019</p>
+            </div>
+            <p class="notificationHeader">Нові функції моніторинга</p>
+            <p class="notificationMessage">
+              Uniquely fashion B2B content for one-to-one web-readiness.
+              Continually embrace.
+            </p>
+          </li>
+          <li id="notification">
+            <div class="itemTime">
+              <button class="notificationRefresh">оновлення</button>
+              <p class="notificationDate">Сьогодні 29.05.2019</p>
+            </div>
+            <p class="notificationHeader">Нові функції моніторинга</p>
+            <p class="notificationMessage">
+              Uniquely fashion B2B content for one-to-one web-readiness.
+              Continually embrace.
+            </p>
+          </li>
+          <li id="notification">
+            <div class="itemTime">
+              <button class="notificationRefresh">оновлення</button>
+              <p class="notificationDate">Сьогодні 29.05.2019</p>
+            </div>
+            <p class="notificationHeader">Нові функції моніторинга</p>
+            <p class="notificationMessage">
+              Uniquely fashion B2B content for one-to-one web-readiness.
+              Continually embrace.
+            </p>
+          </li>
+          <li id="notification">
+            <div class="itemTime">
+              <button class="notificationRefresh">оновлення</button>
+              <p class="notificationDate">Сьогодні 29.05.2019</p>
+            </div>
+            <p class="notificationHeader">Нові функції моніторинга</p>
+            <p class="notificationMessage">
+              Uniquely fashion B2B content for one-to-one web-readiness.
+              Continually embrace.
+            </p>
+          </li>
+          <li id="notification">
+            <div class="itemTime">
+              <button class="notificationRefresh">оновлення</button>
+              <p class="notificationDate">Сьогодні 29.05.2019</p>
+            </div>
+            <p class="notificationHeader">Нові функції моніторинга</p>
+            <p class="notificationMessage">
+              Uniquely fashion B2B content for one-to-one web-readiness.
+              Continually embrace.
+            </p>
+          </li>
+          <li id="notification">
+            <div class="itemTime">
+              <button class="notificationRefresh">оновлення</button>
+              <p class="notificationDate">Сьогодні 29.05.2019</p>
+            </div>
+            <p class="notificationHeader">Нові функції моніторинга</p>
+            <p class="notificationMessage">
+              Uniquely fashion B2B content for one-to-one web-readiness.
+              Continually embrace.
+            </p>
+          </li>
+        </ul>
+        <a  class="allNotifications" href="./page2.html">Переглянути всі</a>
+      </div>
+    </div>
+    <!-- modal 2 -->
+    <div id="notificationModal" class="modalNotification">
+      <span class="close notificationClose">&times;</span>
+      <div class="modalWrapper">
+        <div class="itemTime">
+          <button class="notificationRefresh">оновлення</button>
+          <p class="notificationDate">Сьогодні 29.05.2019</p>
+        </div>
+        <p class="notificationHeader">Нові функції моніторинга</p>
+        <p class="notificationMessage">
+          Додайте свою компанію та головних контрагентів до моніторингу та
+          першим дізнавайтесь про істотні зміни офіційних даних.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
